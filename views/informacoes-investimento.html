@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyScale</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/informacoes-investimento.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- <header>
+        <div class="main-container">
+            <div class="logo-header">
+                <a href="index.html">
+                    <img src="../images/logo-icon.svg" alt="">
+                    <span>MoneyScale</span>
+                </a>
+            </div>
+        </div>
+
+        <nav class="container-botoes">
+            <ul class="navbar">
+                <li><a href="renda-fixa.html">RENDA FIXA</a></li>
+                <li><a href="taxa-selic.html">TAXA SELIC</a></li>
+                <li><a href="tesouro-direto.html">TESOURO DIRETO</a></li>
+                <li>
+                    <a href="lci-lca.html">LCI e LCA</a></li>
+                <li><a href="cdi.html">CDI</a></li>
+                <li><a href="cdb.html">CDB</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <header>
+        <div class="flex-menu">
+            <div id="flex-logo">
+                <a href="index.html"><img src="../images/logo-icon.svg" alt="Logo"></a>
+                <a href="index.html">
+                    <h1>MoneyScale</h1>
+                </a>
+            </div>
+            <div class="top-nav">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+              </label>
+                <ul class="menu">
+                    <li>
+                        <a href="renda-fixa.html">RENDA FIXA</a>
+                    </li>
+                    <li>
+                        <a href="taxa-selic.html">TEXA SELIC</a>
+                    </li>
+                    <li>
+                        <a href="tesouro-direto.html">TESOURO DIRETO</a>
+                    </li>
+                    <li>
+                        <a href="lci-lca.html">LCI e LCA</a>
+                    </li>
+                    <li>
+                        <a href="cdi.html">CDI</a>
+                    </li>
+                    <li>
+                        <a id="radios" href="cdb.html">CDB</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="content-container">
+        <!-- <span class="label-reais">R$</span>
+        <img class="arrow-2" src="../images/arrow-2.svg" alt="">
+        <label id="label-line-poupanca">0</label>
+        <div id="line-poupanca"></div>
+        <label id="label-line-invest">0</label>
+        <div id="line-invest"></div>
+        <img class="arrow-1" src="../images/arrow-1.svg" alt="">
+        <p id="graph-number-one">1</p>
+        <span class="label-tempo">T</span>
+
+        <div class="poupanca-box"></div>
+        <p class="poupanca-label">POUPANÇA</p> -->
+        <form class="input-sequence" action="">
+            <label for="input-sequence">INFORMAÇÕES DO INVESTIMENTO</label>
+
+            <label for="tipo_investimento">Tipo de Investimento Escolhido:</label>
+            <input class="input-texto-pag" name="tipo_investimento" type="text" placeholder="" readonly="readonly">
+
+            <label>Valor total investido:</label>
+            <input class="input-texto-pag" name="aporte_inicial" type="text" placeholder="" readonly="readonly">
+
+            <label>Tempo de investimento: (Meses)</label>
+            <input class="input-texto-pag" name="aporte_mensal" type="text" placeholder="" readonly="readonly">
+
+            <label>Valor do montante com IR:</label>
+            <input class="input-texto-pag" name="taxa_de_juros" type="text" placeholder="" readonly="readonly">
+
+            <label>Valor do montante sem IR:</label>
+            <input class="input-texto-pag" name="" type="text" placeholder="" readonly="readonly">
+
+            <label>Juros total:</label>
+            <input class="input-texto-pag" name="" type="text" placeholder="" readonly="readonly">
+
+            <label>Valor do IR:</label>
+            <input class="input-texto-pag" name="" type="text" placeholder="" readonly="readonly">
+
+            <label>Alíquota do IR:</label>
+            <input class="input-texto-pag" name="" type="text" placeholder="" readonly="readonly">
+
+            <!-- <button href="index.html" class="btn-simular" type="submit" style="width: 214px;"> -->
+            <a id="btn-simular-novamente" href="index.html">SIMULAR NOVAMENTE</a>
+            <!-- </button> -->
+            <div class="div-logo"><img src="../images/logo-xp.svg" alt=""></div>
+        </form>
+    </div>
+
+    <footer>
+        <img src="../images/logo-icon.svg " alt="Logo-Footer">
+        <p>copyright &copy; 2022 </p>
+    </footer>
+
+    <script src="../src/js/informacoes-investimento.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyScale</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- <header>
+        <div class="container">
+            <div class="main-container">
+                <div class="logo-header">
+                    <a href="index.html">
+                        <img src="../images/logo-icon.svg" alt="">
+                        <span>MoneyScale</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="container-botoes">
+                <ul class="navbar">
+                    <li><a href="renda-fixa.html">RENDA FIXA</a></li>
+                    <li><a href="taxa-selic.html">TAXA SELIC</a></li>
+                    <li><a href="tesouro-direto.html">TESOURO DIRETO</a></li>
+                    <li><a href="lci-lca.html">LCI e LCA</a></li>
+                    <li><a href="cdi.html">CDI</a></li>
+                    <li><a href="cdb.html">CDB</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+    <header>
+        <div class="flex-menu">
+            <div id="flex-logo">
+                <a href="index.html"><img src="../images/logo-icon.svg" alt="Logo"></a>
+                <a href="index.html">
+                    <h1>MoneyScale</h1>
+                </a>
+            </div>
+            <div class="top-nav">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+              </label>
+                <ul class="menu">
+                    <li>
+                        <a href="renda-fixa.html">RENDA FIXA</a>
+                    </li>
+                    <li>
+                        <a href="taxa-selic.html">TEXA SELIC</a>
+                    </li>
+                    <li>
+                        <a href="tesouro-direto.html">TESOURO DIRETO</a>
+                    </li>
+                    <li>
+                        <a href="lci-lca.html">LCI e LCA</a>
+                    </li>
+                    <li>
+                        <a href="cdi.html">CDI</a>
+                    </li>
+                    <li>
+                        <a id="radios" href="cdb.html">CDB</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content-container">
+        <p class="simule-text ">Simule seus investimentos de <strong>renda fixa</strong> no algoritmo da MoneyScale e escale seu rendimentos</p>
+
+        <form class="input-sequence" action="/ " method="post">
+            <select class="input-invest-type" name="tipo_investimento" id=" " required>
+        <option title="tipo_investimento" value="nenhum">Escolha o tipo do seu investimento...</option>
+        <option title="tipo_investimento" value="tesouro" required>Tesouro Direto</option>
+        <option title="tipo_investimento" value="lci" required>LCI</option>
+        <option title="tipo_investimento" value="lca" required>LCA</option>
+        <!-- <option title="tipo_investimento " value="cdi ">CDI</option> -->
+        <option title="tipo_investimento " value="cdb" required>CDB</option>
+      </select>
+
+            <input class="input-texto-pag" name="aporte_inicial" type="text" placeholder="Aporte Inicial... ">
+            <input class="input-texto-pag" name="aporte_mensal" type="text" placeholder="Aporte Mensal... " required>
+            <input class="input-texto-pag" name="taxa_de_juros" type="text" placeholder="Taxa de Juros... " required>
+            <input class="input-texto-pag" name="duracao_investimento" type="text" placeholder="Duração do investimento em meses... " required>
+
+            <button class="btn-simular" type="submit">SIMULAR</button>
+            <img class="loading-img" src="../images/vector-loading.svg" alt="Loading">
+        </form>
+    </div>
+
+    <footer>
+        <img src="../images/logo-icon.svg " alt="Logo-Footer">
+        <p>copyright &copy; 2022 </p>
+    </footer>
+
+    <script src="../src/js/index.js"></script>
+    <script src="../src/js/informacoes-investimento.js"></script>
+
+</body>
+
+</html>
