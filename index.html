@@ -76,22 +76,24 @@
         <p class="simule-text ">Simule seus investimentos de <strong>renda fixa</strong> no algoritmo da MoneyScale e escale seu rendimentos</p>
 
         <form class="input-sequence" action="/ " method="post">
-            <select class="input-invest-type" name="tipo_investimento" id=" " required>
+            <select class="input-invest-type" name="tipo_investimento" id=" ">
         <option title="tipo_investimento" value="nenhum">Escolha o tipo do seu investimento...</option>
-        <option title="tipo_investimento" value="tesouro" required>Tesouro Direto</option>
-        <option title="tipo_investimento" value="lci" required>LCI</option>
-        <option title="tipo_investimento" value="lca" required>LCA</option>
+        <option title="tipo_investimento" value="tesouro" >Tesouro Direto</option>
+        <option title="tipo_investimento" value="lci" >LCI</option>
+        <option title="tipo_investimento" value="lca" >LCA</option>
         <!-- <option title="tipo_investimento " value="cdi ">CDI</option> -->
-        <option title="tipo_investimento " value="cdb" required>CDB</option>
+        <option title="tipo_investimento " value="cdb" >CDB</option>
       </select>
 
             <input class="input-texto-pag" name="aporte_inicial" type="text" placeholder="Aporte Inicial... ">
-            <input class="input-texto-pag" name="aporte_mensal" type="text" placeholder="Aporte Mensal... " required>
-            <input class="input-texto-pag" name="taxa_de_juros" type="text" placeholder="Taxa de Juros... " required>
-            <input class="input-texto-pag" name="duracao_investimento" type="text" placeholder="Duração do investimento em meses... " required>
+            <input class="input-texto-pag" name="aporte_mensal" type="text" placeholder="Aporte Mensal... ">
+            <input class="input-texto-pag" name="taxa_de_juros" type="text" placeholder="Taxa de Juros... ">
+            <input class="input-texto-pag" name="duracao_investimento" type="text" placeholder="Duração do investimento em meses... ">
 
-            <button class="btn-simular" type="submit">SIMULAR</button>
-            <img class="loading-img" src="./images/vector-loading.svg" alt="Loading">
+            <!-- <a href="informacoes-investimento.html"> <button class="btn-simular">SIMULAR</button>
+            </a> -->
+            <a class="btn-simular" href="informacoes-investimento.html">SIMULAR</a>
+            <!-- <img class="loading-img" class="btn-simular" src="./images/vector-loading.svg" alt="Loading"> -->
         </form>
     </div>
 
